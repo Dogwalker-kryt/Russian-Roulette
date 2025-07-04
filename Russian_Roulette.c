@@ -2,37 +2,30 @@
 #include <stdlib.h>
 
 int main() {
-    printf("Welcome to Russian roulette!\n");
+    printf("Welcome to Russion rulette!\n");
     printf("--------------------------\n");
-    printf("Enter 'start' to start the game\n");
-    printf("Enter 'exit' to exit\n");
+    printf("Enter 1 to start the game\n");
+    printf("Enter 2 to exit\n");
     int game();
-    char menuinput;
-    scanf("%c", menuinput);
+    int menuinput;
+    scanf("%d", menuinput);
     switch (menuinput) {
-    case 'start':
-        game();
-        break;
+        case 1:
+            game();
+            break;
 
-    case 'exit':
-        return 0;
-        break;
+        case 2:
+            return 0;
+            break;
 
-    default:
-        printf("[Error] Enter only 'start' or 'exit'\n");
-        return 0;
+        default:
+            printf("[Error] Enter only 'start' or 'exit'\n");
+            break;
     }
-    return 0; 
 }
 
 int game() {
-    char first = "blank";
-    char second = "blank";
-    char thired = "not_blank";
-    char fourth = "blank";
-    char fith = "blank";
-    char sixt = "blank";
-    char arr[] = {first, second, thired, fourth, fith, sixt};
+    int arr[] = {1, 2, 3, 4, 5, 6};
     printf("1 Revolver!\n");
     printf("6 Bullets\n");
     printf("1 Bullet kills\n");
@@ -42,35 +35,35 @@ int game() {
     for (int i = 0; i < arr; i++) {
         int shot = rand() % 6;
         printf("[Program] pulls trigger: %d\n", shot);
-        if (shot = thired) {
+        if (shot = "not_blank") {
             printf("Programm shot him self!\n");
             printf("You won!\n");
             return 0;
         } else {
-            printf("[You] pulls trigger: %d\n", shot);
-            if (shot == thired) {
+            printf("[You] pulls trigger\n");
+            if (shot = 4) {
                 printf("You lost!\n");
                 return 0;
             } else {
-                printf("[Program] pulls trigger: %d\n", shot);
-                if (shot = thired) {
+                printf("[Program] pulls trigger\n");
+                if (shot = 4) {
                     printf("Programm shot him self!\n");
                     printf("You won!\n");
                     return 0;
                 } else {
-                    printf("[You] pulls trigger: %d\n", shot);
-                    if (shot == thired) {
+                    printf("[You] pulls trigger\n");
+                    if (shot = 4) {
                         printf("You lost!\n");
                         return 0;
                     } else {
-                        printf("[Program] pulls trigger: %d\n", shot);
-                        if (shot = thired) {
+                        printf("[Program] pulls trigger\n");
+                        if (shot = 4) {
                             printf("Programm shot him self!\n");
                             printf("You won!\n");
                             return 0;
                         } else {
-                            printf("[You] pulls trigger: %d\n", shot);
-                            if (shot == thired) {
+                            printf("[You] pulls trigger:\n");
+                            if (shot = 4) {
                                 printf("You lost!\n");
                                 return 0;    
                             } else {
