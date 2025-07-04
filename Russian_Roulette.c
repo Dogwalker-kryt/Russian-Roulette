@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main() {
-    printf("Welcome to Russion rulette!\n");
+    printf("Welcome to Russian Roulette!\n");
     printf("--------------------------\n");
     printf("Enter 1 to start the game\n");
     printf("Enter 2 to exit\n");
